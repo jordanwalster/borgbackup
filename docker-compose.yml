@@ -7,3 +7,4 @@ services:
       - ./borg:/opt/borg
     environment:
       - SSH_PASSWORD=value
+    restart: always
