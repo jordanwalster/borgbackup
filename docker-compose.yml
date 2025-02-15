@@ -1,6 +1,6 @@
 services:
   borg:
-    image: git.jrdn.dev/jordanwalster/borgbackup:latest
+    image: ghcr.io/jordanwalster/borgbackup:latest
     ports:
       - 22:22
     volumes:
