@@ -12,6 +12,10 @@ echo "borg:$SSH_PASSWORD" | chpasswd
 echo "Setting file ownership"
 chown -R borg:borg /opt/borg 
 
+# Create ssh directory and ensure permissions
+mkdir /home/borg/.ssh
+chown borg:borg /home/borg/.ssh
+
 # Set default login path to /opt/borg
 echo 'cd /opt/borg' >> /home/borg/.profile
 
