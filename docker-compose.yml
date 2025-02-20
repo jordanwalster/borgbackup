@@ -5,10 +5,6 @@ services:
       - 22:22
     volumes:
       - ./borg:/opt/borg
-      - ssh-keys:/home/borg/.ssh
     environment:
       - SSH_PASSWORD=value
     restart: always
-
-volumes:
-  ssh-keys:
