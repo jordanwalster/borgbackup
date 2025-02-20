@@ -11,7 +11,7 @@ To use this container, run the supplied  `docker-compose.yml` and substitute the
 Create your first repository against the container using:
 
 ```
-borg init -e repokey borg@<containter ip>:/opt/borg/<repository name>
+borg init -e repokey borg@[IP]:/opt/borg/<repository name>
 ```
 
 If you have selected another port other than 22, you can change the port used by borg by running `export BORG_RSH="ssh -p <port>"` on the client running the backup command.
